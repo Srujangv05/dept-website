@@ -1,0 +1,566 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+	<title>ISE Achievements</title>
+</head>
+
+<body onload="myFunction()">
+	<!-- ============= Pre Loader Start ============== -->
+	<div id="loading"></div>
+	<style>
+	  #loading{
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  background: #fff
+	  url('../img/ise.gif')
+	  no-repeat center center;	
+	  z-index: 99999;
+	  }
+	</style>
+	<script>
+		  // $(document).ready(function(){
+			  // 	$('div#loading').removeAttr('id');
+		  // });
+		  var preloader = document.getElementById("loading");
+		  // window.addEventListener('load', function(){
+		  // 	preloader.style.display = 'none';
+		  // 	})
+  
+		  function myFunction(){
+			  preloader.style.display = 'none';
+		  };
+	  </script>
+	<!-- ============= Pre Loader End ============== -->
+
+	<!-- ============= Nav Bar Start ============== -->
+	<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container" id="head">
+		<a class="navbar-brand" href="https://atria.edu" target="_blank" id="logo" ><img src="https://atria.edu/assets/images/logo-ait-v1.png" height="50px"></a><a class="navbar-brand" id="logo" href="../index.html">Dept. Of I S E </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		  <div class="collapse navbar-collapse" id="main_nav">
+			
+	
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link  dropdown-toggle"  target="_blank" data-bs-toggle="dropdown"> Research </a>
+					<ul class="dropdown-menu dropdown-menu-right">
+			<li><a class="dropdown-item" href="../research/original.html" target="_blank"> Student Research </a></li>
+					<li><a class="dropdown-item" href="../research/faculty.html" target="_blank"> Faculty Research </a></li>
+					</ul>
+				</li>
+	
+				<li class="nav-item dropdown">
+					<a class="nav-link  dropdown-toggle" href="../achivements/index.html" target="_blank" data-bs-toggle="dropdown"> Achievement </a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="index.html"> Achievements </a></li>
+			<li><a class="dropdown-item" href="index.html"> Student Achievements </a></li>
+					<li><a class="dropdown-item" href="#"> Faculty Achievements </a></li>
+					</ul>
+				</li>
+	
+		  
+				<li class="nav-item dropdown">
+					<a class="nav-link  dropdown-toggle" href="../clubs/index.html" target="_blank" data-bs-toggle="dropdown"> Clubs </a></a>
+					<ul class="dropdown-menu dropdown-menu-right">
+			<li><a class="dropdown-item" href="../clubs/index.html"> Clubs </a></li>
+					<li><a class="dropdown-item" href="#"> Amalgamate </a></li>
+					<li><a class="dropdown-item" href="#"> Quxotics </a></li>
+					<li><a class="dropdown-item" href="#"> Tarana </a></li>
+					</ul>
+				</li>
+	
+				<li class="nav-item dropdown">
+					<a class="nav-link  dropdown-toggle" href="../stu_portal/index.html" target="_blank" data-bs-toggle="dropdown"> Portal </a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="../stu_portal/index.html"> Portal </a></li>
+			<li><a class="dropdown-item" href="#"> CRs </a></li>
+					<li><a class="dropdown-item" href="#"> Marks </a></li>
+					</ul>
+				</li>
+	
+				<li class="nav-item">
+					<a class="nav-link" href="../COEF/index.html"> COE </a>
+				</li>
+	
+				<li class="nav-item dropdown">
+					<a class="nav-link  dropdown-toggle" href="../alumni/index.html" target="_blank" data-bs-toggle="dropdown"> Alumni</a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="../alumni/index.html"> Alumni </a></li>
+			<li><a class="dropdown-item" href="#"> CRs </a></li>
+					<li><a class="dropdown-item" href="#"> Marks </a></li>
+					</ul>
+				</li>
+			</ul>
+	
+		</div> <!-- navbar-collapse.// -->
+		</div> <!-- container-fluid.// -->
+		</nav>
+	
+		<style>
+			#navbar_top{
+				padding: 20px;
+				font-size: 20px;
+			}
+	
+			#logo{
+				font-weight: 500;
+		  font-size: 20px;
+		  letter-spacing: 2px;
+			}
+	
+			.fixed-top {
+				top: -40px;
+				transform: translateY(40px);
+				transition: transform .3s;
+			}
+		</style>
+	
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(){
+				
+				window.addEventListener('scroll', function() {
+				
+					if (window.scrollY > 200) {
+						document.getElementById('navbar_top').classList.add('fixed-top');
+						// add padding top to show content behind navbar
+						navbar_height = document.querySelector('.navbar').offsetHeight;
+						document.body.style.paddingTop = navbar_height + 'px';
+					} else {
+						document.getElementById('navbar_top').classList.remove('fixed-top');
+						// remove padding top from body
+						document.body.style.paddingTop = '0';
+					} 
+				});
+			}); 
+		</script>
+		<!-- ============= Nav Bar End ============== -->
+	
+	<!-- ============= Main Page Start ============== -->
+	
+		<!--Your Content here-->
+
+
+<section class="header">
+    <div class="text1">
+        <h1>Achievements</h1><br><br><br><br>
+
+		<p><a class="btn btn-light" href="#" role="button" style="font-size: 30px;">Student Achievements</a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		    <a class="btn btn-light" href="#" role="button" style="font-size: 30px;">Faculty Achievements</a>
+		</p>
+		<br><br><br>
+    </div>
+	
+
+</section>
+
+<br><br><br>
+<section class="text-type" style="padding-left: 75px; padding-right: 75px;">
+	<div class="home-title">
+		<p>
+			Achievements, both academic and extra curricular by the students and faculty at our Department do not go unnoticed
+           Here are some of the pictures showcasing the talents
+		</p>
+	</div>
+	
+</section>
+
+<br><br><br>
+
+<section class="slider-pics">
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="pics/1.jpg" style="width:100% ;height: 100%">
+		  <div class="text" id="s1">Congratulations</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="pics/2.jpg" style="width:100%; height: 100%">
+		  <div class="text" id="s1">Job Offers</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="pics/3.jpg" style="width:50% ;height: 50%">
+		  <div class="text" id="s1" >Neha Prakash</div>
+		</div>
+		
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+		
+		<script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 5000); // Change image every 2 seconds
+		}
+		</script>
+</section>
+
+<section>
+	<div class="container marketing" id="img_img">
+		<hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7"></div>
+	<h1 style="text-align: center;">Students</h1>
+
+<div class="container marketing" id="img_img">
+		<hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Neha <br> <span class="text-muted">Prakash</span></h2>
+            <p class="lead">Neha Prakash of our ISE Department has secured herself a grand package of 14L per annum<br>
+			She interned at PhonePe in her final year and also secured a job there for her outstanding performance</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="pics/3.jpg" alt="Generic placeholder image" height="500px" width="500px">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Placement <br> <span class="text-muted">Statistics</span></h2>
+            <p class="lead">A whopping n companies were present at our campus as part of the campus selection<br>
+				Many students among others secured wonderful jobs in those companies and cleared interviews
+			Our placement training drives did help a lot of them clear many rounds of selection</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="pics/1.jpg" alt="Generic placeholder image" height="500px" width="500px">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Congratulations  <br> <span class="text-muted">To the students</span></h2>
+            <p class="lead">The Department of ISE, Atria Institute of Technology would like to Congratulate the students for performing well and
+				securing handsome packages. We wish only the best and hope they excel in their careers.
+			</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="pics/2.jpg" alt="Generic placeholder image" height="500px" width="500px">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+		<!--<div class="row featurette">
+			<div class="col-md-7 order-md-2">
+			  <h2 class="featurette-heading">One last time, <br> <span class="text-muted">Taylor Swift</span></h2>
+			  <p class="lead">One more picture of Taylor Swift to conclude, because why not. She is the absolute record breaking artist of our generation. So much that, she was<br>
+				bestowed with the 'Artist of the Decade' award by the Recording Academy. Maybe we must create a new website to showcase her talents lol </p>
+			</div>
+			<div class="col-md-5 order-md-1">
+			  <img class="featurette-image img-fluid mx-auto" src="https://drive.google.com/thumbnail?id=13xhTcgnxXYzGaY5vmsR4yGEX8rdBfDhX" alt="Generic placeholder image" height="500px" width="500px">
+			</div>
+		  </div>
+		
+		  <hr class="featurette-divider">--->
+
+</div>
+</section>
+<h1 style="text-align: center;">Faculties</h1>
+<div class="container marketing" id="img_img">
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+	  <div class="col-md-7"> </div>
+
+<!-- TO ADD GALLERY!-->
+
+
+<section class="gallery">
+	<input type="radio" name="Photos" id="check1" checked>
+         <input type="radio" name="Photos" id="check2">
+         <input type="radio" name="Photos" id="check3">
+         <input type="radio" name="Photos" id="check4">
+
+
+        <div class="container2">
+             <h4 style="font-weight: 500;font-size: 50px; color: rgba(2, 32, 32, 0.808);">Gallery</h4>
+             <br>
+
+             <div class="top-content">
+                 <h4></h4>
+                 <label for="check1">ALL PHOTOS</label>
+                 <label for="check2">PLACEMENTS</label>
+                 <label for="check3">STUDENT ACHIEVEMENT</label>
+                 <label for="check4">FACULTY ACHIEVEMENT</label>
+             </div>
+             <section>
+
+             <div class="photo-gallery">
+                <div class="pic tech">
+                     <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                   <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                   <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="pics/TS.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="pics/TS.png" alt="">
+                </div>
+             </div>
+          
+         </div>
+</section>
+<br><br><br>
+
+
+	<!-- ============= Main Pager End ============== -->
+
+	<!-- ============= Footer Start ============== -->
+		
+	<footer class="bg-dark text-white pt-5 pb-4">
+
+		<div class="container text-center text-md-left">
+	
+			<div class="row text-center text-md-left">
+	
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Department of ISE</h5>
+					<p>The department of ISE motivates all the students to adapt Hands on work experience.</p>
+          <img src="../img/ise_logo.png" width="150px" height="150px">
+					
+				</div>
+	
+        <!-- Variable-->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Others</h5>
+				<p>
+					<a href="../research/original.html" class="text-white" style="text-decoration: none;"> Research</a>
+				</p>
+				<p>
+					<a href="../achivements/index.html" class="text-white" style="text-decoration: none;"> Achievement</a>
+				</p>
+				<p>
+					<a href="../clubs/index.html" class="text-white" style="text-decoration: none;"> Clubs</a>
+				</p>
+				<p>
+					<a href="../stu_portal/ankit/index.html" class="text-white" style="text-decoration: none;"> Portal</a>
+				</p>
+				<p>
+					<a href="../COEF/index.html" class="text-white" style="text-decoration: none;"> COE</a>
+				</p>
+	
+				</div>
+	
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+				<p>
+					<a href="https://atria.edu/assets/pdf/Academic-calendar-2020-21-2nd-to-8th-Semester.pdf" class="text-white" style="text-decoration: none;"> Academic Calendar</a>
+				</p>
+				<p>
+					<a href="https://ait.academiaerp.com/" class="text-white" style="text-decoration: none;"> ERP</a>
+				</p>
+				<p>
+					<a href="https://atria.edu/admissions.php#overview" class="text-white" style="text-decoration: none;">Admissions</a>
+				</p>
+				<p>
+					<a href="https://atria.edu/grievance.php" class="text-white" style="text-decoration: none;"> Grievance Cell</a>
+				</p>
+				</div>
+	
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+					<p>
+						<i class="fas fa-home mr-3"></i> ASKB Campus, 1st Main Rd, Ags Colony, Anandnagar, Hebbal, Bengaluru, Karnataka 560024
+					</p>
+					<p>
+						<i class="fas fa-envelope mr-3"></i> ise@atria.edu
+					</p>
+					<p>
+						<i class="fas fa-phone mr-3"></i> +91 70 9032 9032
+					</p>
+					
+				</div>
+				
+			</div>
+	
+			<hr class="mb-4">
+	
+			<div class="row align-items-center">
+	
+				<div class="col-md-7 col-lg-8">
+					<p>	Copyright ©2021 All rights reserved by:
+						<a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Dept. of ISE</strong>
+						</a> | Website Designed by team <a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Amalgamate</strong>
+						</a></p>
+					
+					
+				</div>
+
+				<div class="col-md-5 col-lg-4">
+					<div class="text-center text-md-right">
+	
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/profile.php?id=100070239374791" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/iseatria/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://github.com/amalgamate-club" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-github"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.linkedin.com/in/ISE-ATRIA-IT/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+							</li>
+						</ul>
+						
+					</div>
+					
+				</div>
+			</div>
+	
+		</div>
+		
+	</footer>
+  
+	<!-- ============= Footer End ============== -->
+
+</body>
+</html>
